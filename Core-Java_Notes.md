@@ -323,13 +323,185 @@ In any java file 1st statement should be package ststement\
 (class type, interface, enum and anotation
 
 ## Access Specifier
-PUBLIC:-it can be accessd anywhere/by anyone
-PROTECTED:-it can be accessed within the package and outside the package with isArelationship
-DEFAULT:-It can be Accessed within the package within the class
+PUBLIC:-it can be accessd anywhere/by anyone\
+PROTECTED:-it can be accessed within the package and outside the package with isArelationship\
+DEFAULT:-It can be Accessed within the package within the class\
 PRIVATE:-can be accessed only within the class
 ##### note:
-members of the class can have all 4 access specifier
-the class can have only 2 access specifer (Public and Default)
+members of the class can have all 4 access specifier\
+the class can have only 2 access specifer (Public and Default)\
 we can develop multiple classes in a asingle file ehich ever class is declared with keyword public only that class is eligible to have main method
+
+### what is java main class
+declare data member as private ristrict the direct access outside the class and provide indirect acess through public services through getter and setters is called as java main class
+
+## OBJECT CLASS
+toString\
+It is a non static,non final method of object class \
+Object class belongs to java.lang.package\
+Return type String\
+Each and every class inherits object class\
+when ever we point a ref variable it will invoke string signature\
+it will create fully qualified path\
+
+public string tostring{\
+------\
+------}\
+
+public class Sapmple1{\
+	public string tostring(){\
+	return "Hai there"\
+ }\ 
+
+PCVM(------){\
+Sample1 S1=new Sample1();\
+SOP(S1);\
+}\
+}
+
+## hashcode
+It is a non static,non final method of object class \
+Object class belongs to java.lang.package\
+Return type int\
+Each and every class inherits object class\
+Whenever we invoke hashcode it will return a inque code hashcode based on object address
+
+public class Sample1{\
+PSVM(-----){\
+Sample1 S1=new Sample1();\
+SOP(S1.hashcode();\
+}\
+}
+
+
+## equals
+It is a non static,non final method of object class \
+Object class belongs to java.lang.package\
+Return type boolean\
+Each and every class inherits object class\
+Whenever we invoke equals it will return a true if both object address are same else false\
+Signature
+
+public boolean equals{\
+------\
+------}\
+
+object clone=void\
+wait=void\
+notify=void\
+notifyall=void\
+
+## STRING CLASS
+Note:- any class which is declared with key word finalis calledd as FINAL class\
+We can declare method, class cariable as final but not in constructor\
+We can have object for Final Class but we can not inherit\
+Final method can be overloaded but it cannot be overridden\
+String Class is immutable\
+Object will be stores in Heap memory
+
+Which ever String incloced in double qoutes String\
+STRING object is stored in String pool area\
+2 type \
+1) constant pool area\
+2) nonconstant pool area\
+
+constant pool area\
+String S2="hello";\
+it will not allow dublicate\
+any string object declare without new Keyword\
+
+Non Constant area\
+String S1=new String();\
+it allows dublicate\
+any String object decalred with new Keyword
+
+String is a Final Class\
+String class belongs to java.lang.package\
+we can create object for string class\
+		.Without New operator\
+		.With New operator\
+
+All the string object will be stored in Atring pool area\
+String pool area is further divided into 2 ways\
+		.Constant Pool Area\
+		.Nonconstant Pool Area\
+
+Any String object which is created without new operator will be stored in constant pool area\
+Any String object which is created with new operator will be stored in Nonconstant Pool area\
+Sring object without new operator will not allow dublicates\
+String object with new operator will allow dublicates\
+
+String class is immutable\
+what:- It will change the state of the object\
+why:- when multiple reference variable's are pointing to a single object and if any one of these reference variable is de-referenced then it will not effect other reference variable this is why it is Immutable\
+As a test Engg we have to equals Method of String class to compare object value\
+
+functional interface:-any interface which as only abstract method\
+marker interface:-an empty interface 
+
+## Exception Handling
+it is an event trigged during execption of program which interrupt the execution and stop the execution abruptly or suddenly handling this event using Try and Catch or throws is called Exception Handling
+
+there are 2 type of Exception handling\
+unchecked/compilation Exception\
+checked/runtime Exception
+
+### UNCHECKED EXCEPTION
+Unchecked Exception it is exception which is caught by compilier at compile time\
+it can be handled by using TRY and CATCH or THROWS\
+all the Exception is handled at compile time it self
+
+### CHECKED EXCEPTION
+Unchecked Exception it is exception which is caught by JVM at Run time\
+it can be handled by using TRY and CATCH or THROWS\
+all the Exception is handled at run time it self\
+
+public class Sample1 {\
+public static void main(String[] args) {\
+// TODO Auto-generated method stub\
+System.out.println("****MS*****");\
+try {\
+int a=1/2;\
+int[] arr= {10,0,30};\
+try {	System.out.println(arr[7]);\
+}catch(ArrayIndexOutOfBoundsException e){\
+System.out.println("handled");\
+}\
+}catch(ArithmeticException e) {\
+System.out.println("caught");\
+}\
+System.out.println("****ME*****");\
+} \
+}
+
+Rules:\
+For every try ther should be minimum one catch\
+All abnormal statement should be developed in try block and address them in catch block\
+For Try block ther can be multiple catch block\
+Only one catch block will get executed for a perticular exception\
+Once the execption occurs further ststements of try block will not get executed\
+We can not develop any statement between try and catch\
+Exception class can address all the execution either it might be run time or compile time\
+We can develop finally block with combination of try finally OR try catch finally\
+In a try block we can develop try and catch\
+
+#### Finally
+finally block will get executeted mandatorly even through exception is handled or not
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
