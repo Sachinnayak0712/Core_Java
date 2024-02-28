@@ -164,7 +164,7 @@ Developin a amethod in subclass with same name and signature as in super class b
 #### Rules
 Method should be nonstatic\
 Is a relationship\
-Method name and signature should be sameas in the super class\
+Method name and signature should be sameas in the super class
 
 ## Super keyword
 This is used in method overriding\
@@ -177,17 +177,17 @@ There are 2 type of type casting\
 	2) Class type casting
 
 ### Primitive Type Casting
-converting from one primitive data type to another primitive data type is called as Primitive type casting\
+Converting from one primitive data type to another primitive data type is called as Primitive type casting\
 There are 2 type of Primitive type casting
 1) Widening\
 2) Narrowing
-\
+
 #### Widening 
-converting from smaller primitive data type to any of its bigger primitive data type is called as Widening\
+Converting from smaller primitive data type to any of its bigger primitive data type is called as Widening\
 Widening can be done by both implisitly and explisitly\
-double x=20;\					
+double x=20; \					
 SOP(x)\
-\
+
 double x=(double)20;\
 SOP(x)
 
@@ -199,17 +199,137 @@ SOP(x)
 
 ### Class Type Casting
 Converting from one class object to another class type is called Type casting or derived type casting\
-there 2 type of class casting\
+There 2 type of class casting\
 	1) Up casting\
-	2) Down casting\
+	2) Down casting
 
 #### Up casting
 Up casting converting subclass object to super class type is called Up casting\
-it can be done implicitly and explicitly
+It can be done implicitly and explicitly
 
 #### Down casting 
 Up casting converting super class object to sub class type is called Up casting\
-it can be done explicitly
+It can be done explicitly
 
+# OOPS
+![java-oops](https://github.com/Sachinnayak0712/Core_Java/assets/66566069/bba7082e-13ff-44d1-8c27-e484b24f5e4f)
+
+Class and Object\
+Inheritance\
+Polymorphism\
+Encapsulation\
+Abstraction\
+
+
+## Class
+Is a blue print to create object
+## Object
+Is real time entity which ahs state(nonstatic variable) and behaviour(nonstatic method)\
+State:- what dat it can hold\
+Behaviour:-the way it behave
+
+## Inheritance
+Inherting the property from one class to another class
+
+### single level Inheritance
+A subclass inheriting the property from only one super class
+### multilevel level Inheritance
+A subclass inheriting the property from only its super class intern super class inherting property from its super class
+### Hierarchical Inheritance
+Multiple sub calss inheriting property from only one super class
+### Multiple Inheritance
+A subclass inheriting the property from multiple super class
+### Hyberid inheritance
+Combination of single,multilevel,hierarchical inheritance
+
+## Polymorphism
+An object showing different behaivor at different stages of life cycle\
+2 type of polymorphism\
+	1) compile time polymorphism\
+	2) run time polymorphism
+
+### Runtime Polymorphism
+Method declaration getting binded to it defination at runtime by the JVM based on the object created is called as Run time polymorphism\
+Since method declaration gets binded at run time hence it is called as late binding\
+Once method declaration gets binded to its defination it can be rebinded hence it is called dynamic binding\
+Method overriding is an example
+
+### Compiletime Polymorphism
+Method declaration getting binded to it defination at compiletime by the compiler based on the arguments passed is called as Compile time polymorphism \
+Since method declaration gets binded at run time hence it is called as late binding\
+Once method declaration gets binded to its defination it can be rebinded hence it is called static binding\
+Method overriding is an example
+
+
+## Abstract class
+1)concrete method:-any mehtod which has both declaration and defination\
+2)concrete class:-any class which has only concrete method\
+3)abstract method:-any method is declared with keyword abstract\
+4)abstract class:- any class declared with keyword abstract\
+5)if class consist of abstract method then compulsarily class should be declared as abstract but visa versa is not true\
+6)an abstract class can have concrete and abstract method\
+7)class which provide implementation to the abstract method is called as implentation class\
+8) we cannot declare abstract method as static final and private\
+9) if any one of the abstract method is not overridden in the subclass the subclass should be declared as abstract\
+10) we can not create object for object class and interface throught abstract class we can achive upto 100% abstraction
+
+## Abstraction:-
+Hide the complexity of the system and exposing only required functionality to the end user
+
+How to achive abstracton
+To achive abstraction declare all essential property ininterface and provide implementation in The subclass. Create reference variable of interface type initialize the reference variable with the implementation class object this is how we can achive abstraction through interface we can achive 100% abstraction
+
+## Encapsulation
+Wraping of daata and function member into single unit is called as encapsulation
+
+It is one of the oops principle in java\
+Java is by default encapsulation\
+we can not declare any variable outside the class\
+we can not have any print statement outside the method\
+declare the data member as private ristrict the direct acess outside the class and provide in direct acess through public services called getters and setters is called as encapsulation
+there  is no rules it should be get and set\ 
+get is used to get the value\
+set is used to set the value\
+*****************************************************************************************************************************************************************************************
+
+## Interface
+interface is java type. it is a pure abstract body\
+2 member variable and method\
+variable is by default public static and final\
+method is by default default public and abstract\
+interface is by default abstract\
+interface doen't support constructor\
+implements is keyword used to inherit property from interface to class\
+if anyone of the abstract method is not overridden in sub class then that metod should be declared as abstract\
+we can not create object for interface\
+each and every class extends object class, object class is super most class\
+interface is supermost class\
+through interface we can achive multiple inheritance\
+throught interface we can achive 100% abstraction\
+classs which provide implementation for the abstract method is called as implementation
+
+## Package: 
+it is a folder structure which is used to store similar kind of file. package should be created in reverse order of URL
+Ex:-  www.google.gmail.com\
+	com-\
+	    gmail-\
+		  google-\
+			 www\
+    
+Jave provide a akeyword called import which is used to import files from one package to another package
+In any java file 1st statement should be package ststement\
+2nd statement should be import statement we can have N no of import Statement\
+3rd statement should be the java Type\
+(class type, interface, enum and anotation
+
+## Access Specifier
+PUBLIC:-it can be accessd anywhere/by anyone
+PROTECTED:-it can be accessed within the package and outside the package with isArelationship
+DEFAULT:-It can be Accessed within the package within the class
+PRIVATE:-can be accessed only within the class
+##### note:
+members of the class can have all 4 access specifier
+the class can have only 2 access specifer (Public and Default)
+we can develop multiple classes in a asingle file ehich ever class is declared with keyword public only that class is eligible to have main method
 
 
