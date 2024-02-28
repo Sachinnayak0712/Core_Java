@@ -1,4 +1,4 @@
-method with parameter
+Method with parameter
 class area1{
 static void ar(int a,in h){
 int a=b*h;
@@ -12,7 +12,7 @@ area1.ar(4,4);
 }
 
 
-method with return type
+Method with return type
 class area1{
 static void ar(){
 int a=4,int h=4
@@ -28,7 +28,7 @@ SOP(res);
 }
 
 
-exception
+Exception
 public class Sample1 {
 public static void main(String[] args) {
 // TODO Auto-generated method stub
