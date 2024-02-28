@@ -1,0 +1,441 @@
+method with parameter
+class area1{
+static void ar(int a,in h){
+int a=b*h;
+SOP(a)
+}
+}
+class mainclass1{
+PSVM(---------){
+area1.ar(4,4);
+}
+}
+
+
+method with return type
+class area1{
+static void ar(){
+int a=4,int h=4
+int a=b*h;
+return a;
+}
+}
+class mainclass1{
+PSVM(---------){
+int res=area1.ar();
+SOP(res);
+}
+}
+
+
+exception
+public class Sample1 {
+public static void main(String[] args) {
+// TODO Auto-generated method stub
+System.out.println("****MS*****");
+try {
+int a=1/2;
+int[] arr= {10,0,30};
+try {	System.out.println(arr[7]);
+}catch(ArrayIndexOutOfBoundsException e){
+System.out.println("handled");
+}
+}catch(ArithmeticException e) {
+System.out.println("caught");
+}
+System.out.println("****ME*****");
+} 
+}
+
+
+passby reference
+class nav{
+void movie(){
+SOP("watch movie")
+}}
+class makemyshow{
+PSVM(--------){
+nav n1=new nav();
+cust1.towatch(a1);
+}
+}
+class cust1{
+static void towatch(nav a1){
+a1.movie
+}}
+
+
+
+factorial
+fact=1;
+for(int i=5;i<1;i++){
+fact=fact*i
+}
+Sop(fact);
+
+
+fibinocchi
+int f1=0;f2=1;f3;
+Sop(f1)
+sop(f2)
+for(int i=1;i<100;i++){
+f3=f1+f2
+sop(f3);
+f1=f2;
+f2=f3;
+}
+
+
+
+primeno
+int no=6;
+boolean flag=true;
+for(int i=2;i<no;i++){
+if(no%i==0){
+flag=false;
+break;
+}}
+if(flag=true){SOP("prime")
+else{"not prime no"}
+}
+
+int space=3;						*
+int star=1;					       **
+for(int i=1;i<4;i++){				      ***
+for(int j=i;j<=space;j++){			     ****
+SOP("")}
+for(int k=1;k<=star;k++){
+SOP(*)
+}
+SOP();
+space--
+star++
+}
+
+
+
+summation of no
+no=123;
+sum=0;
+while(no!==0){
+int rem=no%10;
+sum=sum+rem;
+no=no/10
+}
+SOP(sum)
+
+
+
+
+square of no
+no=123;
+sum=0;
+while(no!==0){
+int rem=no%10;
+sum=sum+(rem*rem);
+no=no/10
+}
+SOP(sum)
+
+
+
+armstrong no
+no=123;
+copy=no;
+sum=0;
+while(no!==0){
+int rem=no%10;
+sum=sum+rem*rem*rem;
+no=no/10
+}
+if(sum=copy){
+SOP("armstrong no")}
+
+
+
+
+sum of factorial of given number
+no=123;
+while(no!==0){
+int rem=no%10;
+sum=sum+facto(rem);
+no=no/10
+}
+SOP(sum)
+}
+
+static int facto(int no){
+int fact=1
+for(int i=no;i<=1;i--){
+fact=fact*i
+}
+return fact;
+}
+
+
+sum of factorial of given no and check if no is strong no or not
+no=123;
+int fact=1
+int copy=no;
+int sum=0;
+while(no!==0){
+int rem=no%10;
+sum=sum+facto(rem);
+no=no/10
+}
+SOP(sum)
+}
+if(copy==no){
+SOP(strong no)
+}else{
+SOP(not strong)
+}
+static int facto(int no){
+int fact=1
+for(int i=no;i<=1;i--){
+fact=fact*i
+}
+return fact;
+}
+
+
+
+
+given no is perfect or not
+int no=28;
+int sum=0;
+for()int i=1;i<=no;i++){
+if(no%i==0){
+sum=sum+i
+}
+}
+if(sum==no){
+SOP(perfect no)}
+}
+
+
+reverse given no
+no=123;
+rev=0
+while(no!==0){
+int rem=no%10;
+rev=rev*10+rem;
+no=no/10
+}
+SOP(rev)
+}
+
+
+pallindrome or not
+no=123;
+copyno=no;
+rev=0
+while(no>0){
+int rem=no%10;
+rev=rev*10-rem;
+no=no/10
+}
+if(rev==copyno){
+SOP(pallindrome)
+}
+}
+
+
+
+
+
+swap without using 3 variable
+int a=10;
+int b=20;
+a=a+b;
+b=a-b;
+a=a-b;
+SOP(a)
+SOP(b)
+
+
+bubble sort
+int arr[]={10,20,30}
+int n=arr.length();
+for(int i =1;i<=n;i++){
+for(int j =1;j<=n;j++){
+if(arr[j-1]<arr[j]){
+int temp=arr[j-1]
+arr[j-1]=arr[j]
+arr[j]=temp
+}}}
+for(int i=0;i<n;i++){
+SOP(arr[i])}
+
+
+
+dymanic in/p
+nextByte(),,nextShort(),,nextInt(),,nextLong(),,nextFloat(),,nextDouble(),,next().CharAt()
+next(),,nextLine()
+
+import java.util.scanner
+scanner sc=new scanner(system in);
+int a = sc.-----;
+
+
+
+
+reverse a given string
+string s1="java";
+string rev="   ";
+for(int i=s1.length(i-1);i>=0;i--){
+rev=rev+s1.CharAt(i);
+}
+SOP(rev);
+
+
+string is pallindrome
+scanner sc=new scanner(system in);
+SOP("enter the in/p");
+string s1 = sc.next();
+string rev="   ";
+for(int i=s1.length(i-1);i>=0;i--){
+rev=rev+s1.CharAt(i);
+}
+if(s1.equals(rev)){
+SOP(palindrome)
+}
+
+
+
+count vowels
+int count=0;
+string s1=" "
+for(int i=0;i<=s1.length();i++){
+char ch=s1.CharAt(i)
+if(ch=='a'||ch=='e'   )
+count++
+}
+
+
+
+how many time lu is repeted lululalalulu
+int count=0;
+string s1=" lululalalulu"
+for(int i=0;i<=s1.length();i++){
+string str = s1.substring(i,i+2)
+if(str.equals("lu")){
+count++
+}}
+SOP(count)
+
+
+
+linear search in an array
+int arr[]={47,746}
+int find=47;
+for(int i=0;i<=arr.lenght(),i++){
+if (arr[i]==find){
+SOP("got the elements")
+}}
+
+
+saparate alph, no and spe char
+string s1="java#22";
+string s2="";
+string s3="";
+string s4="";
+for(int i=0;i<=s1.lenght(),i++)
+if(charcter.isAlphabet(s1.CharAt(i)))
+{s2=s2+s1.CharAt(i)}
+elseif(charcter.isDigit(s1.CharAt(i)))
+{s3=s3+s1.CharAt(i)}
+else{
+{s4=s4+s1.CharAt(i)}
+}
+
+
+collection
+Araylist Sort
+package test2;
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class te {
+public static void main(String[] args) {
+// TODO Auto-generated method stub
+ArrayList l1=new ArrayList();
+l1.add(10);
+l1.add(20);
+l1.add(5);
+l1.add(13);
+Collections.sort(l1);
+System.out.println(l1);
+}
+}
+
+
+unique element
+package test2;
+
+import java.util.Map.Entry;
+import java.util.TreeMap;
+
+public class te {
+public static void main(String[] args) {
+int[] arr= {10,9,8,10,9,10,40,20,10};
+TreeMap<Integer,Integer> l1=new TreeMap<Integer,Integer>();
+for(int i=0;i<arr.length;i++) {
+if(l1.containsKey(arr[i]))
+{
+l1.put(arr[i],1);
+} else{
+int x=l1.get(arr[i]);
+l1.put(arr[i], x);
+}
+}
+System.out.println("***********");
+System.out.println("Element no of occurance");
+System.out.println("************");
+for(Entry<Integer,Integer> a1:l1.entrySet()) {
+if(a1.getValue()==1) {
+System.out.println(a1.getKey()+"\t"+a1.getValue());
+}
+}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
